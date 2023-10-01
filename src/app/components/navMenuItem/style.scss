@@ -1,0 +1,22 @@
+@import "../../colors.scss";
+
+.btn-nav-menu {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+    color: $color-secondary-dark;
+
+    span {
+      font-size: 12px;
+    }
+  }
+}
