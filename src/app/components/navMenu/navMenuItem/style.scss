@@ -1,4 +1,4 @@
-@import "../../colors.scss";
+@import "../../../colors.scss";
 
 .btn-nav-menu {
   background-color: transparent;
@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     gap: 8px;
 
     span {

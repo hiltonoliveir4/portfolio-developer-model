@@ -5,7 +5,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import FolderIcon from "@mui/icons-material/Folder";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 import { useState } from "react";
-import NavMenuItem from "../navMenuItem";
+import NavMenuItem from "./navMenuItem";
 import "./style.scss";
 
 export default function NavMenu() {
@@ -16,9 +16,9 @@ export default function NavMenu() {
   };
 
   const navMenus = [
-    { icon: <AccountCircleIcon />, title: "ABOUT" },
-    { icon: <FolderIcon />, title: "PROJECTS" },
-    { icon: <TextSnippetIcon />, title: "RESUME" },
+    { icon: AccountCircleIcon, title: "ABOUT" },
+    { icon: FolderIcon, title: "PROJECTS" },
+    { icon: TextSnippetIcon, title: "RESUME" },
   ];
 
   return (
@@ -33,11 +33,7 @@ export default function NavMenu() {
             onclick={() => switchActiveMenu(index)}
           />
         ))}
-        <NavMenuItem
-          className="close-nav"
-          icon={<CloseIcon />}
-          active={false}
-        />
+        <NavMenuItem className="close-nav" icon={CloseIcon} active={false} />
       </ul>
     </nav>
   );
