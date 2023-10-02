@@ -1,18 +1,43 @@
+"use client";
+
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import CloseIcon from "@mui/icons-material/Close";
 import FolderIcon from "@mui/icons-material/Folder";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
+import { useState } from "react";
 import NavMenuItem from "../navMenuItem";
 import "./style.scss";
 
 export default function NavMenu() {
+  const [activeMenu, setActiveMenu] = useState(0);
+
+  const switchActiveMenu = (index: number) => {
+    setActiveMenu(index);
+  };
+
+  const navMenus = [
+    { icon: <AccountCircleIcon />, title: "ABOUT" },
+    { icon: <FolderIcon />, title: "PROJECTS" },
+    { icon: <TextSnippetIcon />, title: "RESUME" },
+  ];
+
   return (
     <nav className="nav-menu">
       <ul>
-        <NavMenuItem icon={<AccountCircleIcon />} title="ABOUT" />
-        <NavMenuItem icon={<FolderIcon />} title="PROJECTS" />
-        <NavMenuItem icon={<TextSnippetIcon />} title=" RESUME" />
-        <NavMenuItem className="close-nav" icon={<CloseIcon />} />
+        {navMenus.map((menu, index) => (
+          <NavMenuItem
+            key={index}
+            icon={menu.icon}
+            title={menu.title}
+            active={index === activeMenu}
+            onclick={() => switchActiveMenu(index)}
+          />
+        ))}
+        <NavMenuItem
+          className="close-nav"
+          icon={<CloseIcon />}
+          active={false}
+        />
       </ul>
     </nav>
   );
