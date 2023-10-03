@@ -1,0 +1,34 @@
+@import "../../../../themes/index.scss";
+
+.tecnologies-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include switchTheme('background', 'bg-secondary');
+    border-radius: 8px;
+    padding: 28px;
+    margin: 0px 30px;
+    height: auto;
+
+    h2{
+        @include switchTheme('color', 'color-primary');
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 32px 0px ;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        li{
+            @include switchTheme('color', 'color-secondary');
+        }
+    }
+
+    @media (min-width: 1080px) {
+        width: 980px;
+        margin: 0 auto;
+    }
+}

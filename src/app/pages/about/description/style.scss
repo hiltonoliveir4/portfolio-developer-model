@@ -1,0 +1,44 @@
+@import "../../../../themes/index.scss";
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  @include switchTheme("background", "bg-secondary");
+  padding: 28px;
+  margin: 0px 30px;
+
+  @media (min-width: 1080px) {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  .name {
+    text-align: center;
+    @include switchTheme("color", "color-primary");
+    font-size: 28px;
+  }
+
+  .text-content {
+    margin: 32px 44px;
+    font-size: 14px;
+    @include switchTheme("color", "color-secondary");
+  }
+
+  .btn {
+    @include switchTheme("color", "color-orange");
+    @include switchTheme("background", "bg-primary");
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      transition: 0.3s;
+    }
+  }
+}

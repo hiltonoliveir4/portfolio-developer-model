@@ -1,0 +1,44 @@
+@import "../../../../../themes/index.scss";
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 0 44px;
+
+  @media (min-width: 920px) {
+    flex-direction: row;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    .title-experience {
+      @include switchTheme("color", "color-orange");
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .time-experience {
+      @include switchTheme("color", "color-secondary");
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .description-experience {
+      @include switchTheme("color", "color-secondary");
+      font-size: 12px;
+    }
+  }
+}

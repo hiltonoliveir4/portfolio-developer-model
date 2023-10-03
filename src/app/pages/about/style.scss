@@ -1,6 +1,15 @@
 @import "../../../themes/index.scss";
 
-.about-container{
-    flex-grow: 1;
-    @include switchTheme('background', 'bg-primary');
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+  @include switchTheme("background", "bg-primary");
+  padding-bottom: 80px;
+
+  @media (min-width: 980px) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
 }
