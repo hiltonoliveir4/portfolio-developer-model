@@ -2,7 +2,7 @@
 
 header {
   .header-container {
-    @include switchTheme('background', 'bg-primary');
+    @include switchTheme("background", "bg-primary");
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +18,7 @@ header {
       .menu-icon {
         background-color: transparent;
         border: none;
-        @include switchTheme('color', 'color-primary');
+        @include switchTheme("color", "color-primary");
         cursor: pointer;
       }
     }
@@ -27,7 +27,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      @include switchTheme('color', 'color-orange');
+      @include switchTheme("color", "color-orange");
       background-color: transparent;
       border: none;
       cursor: pointer;
@@ -54,11 +54,20 @@ header {
         }
 
         &:hover {
-          @include switchTheme('color', 'color-orange');
+          @include switchTheme("color", "color-orange");
           background-color: rgba($color: #000000, $alpha: 0.6);
           transition: 0.3s;
         }
       }
     }
   }
+}
+
+//persolizacao da barra de rolagem
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fe655c;
 }
