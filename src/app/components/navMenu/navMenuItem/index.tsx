@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import "./style.scss";
+import { ThemeContext } from "@/app/providers/themeProvider";
 
 interface NavMenuItemProps {
   title?: string;
@@ -16,13 +18,14 @@ export default function NavMenuItem({
   onclick,
 }: //   route,
 NavMenuItemProps) {
+  const { globalTheme } = useContext(ThemeContext);
   const Icon = icon;
   return (
-    <li className={className && className}>
-      <button className={`btn-nav-menu`} onClick={onclick}>
-        <div className={active ? "active-menu" : ""}>
+    <li className={`${className ? className : ''} ${[globalTheme]}`}>
+      <button className={`btn-nav-menu ${[globalTheme]}`} onClick={onclick}>
+        <div className={`${[globalTheme]} ${active ? "active-menu" : ""}`}>
           <Icon sx={{ fontSize: 20 }} />
-          {title && <span>{title}</span>}
+          {title && <span className={`${[globalTheme]}`}>{title}</span>}
         </div>
       </button>
     </li>

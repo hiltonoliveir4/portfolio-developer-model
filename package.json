@@ -16,6 +16,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-switch": "^7.0.0",
     "sass": "^1.68.0"
   },
   "devDependencies": {

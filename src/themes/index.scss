@@ -1,0 +1,15 @@
+@import "../themes/dark.scss";
+@import "../themes/light.scss";
+
+$themes: (
+  dark: $dark,
+  light: $light
+);
+
+@mixin switchTheme($property, $key) {
+  @each $theme, $color in $themes {
+    &.#{$theme} {
+      #{$property}: map-get($color, $key);
+    }
+  }
+}

@@ -1,14 +1,14 @@
 "use client";
 
 import CloseIcon from "@mui/icons-material/Close";
-
 import MenuIcon from "@mui/icons-material/Menu";
 import SendIcon from "@mui/icons-material/Send";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import NavMenu from "../navMenu";
 import Social from "../socialMenu";
 import "./style.scss";
 import SwitchThemeMode from "./switchThemeMode";
+import { ThemeContext } from "@/app/providers/themeProvider";
 
 export default function Header() {
   const [visibleNavMenu, setVisibleNavMenu] = useState(true);
@@ -17,11 +17,13 @@ export default function Header() {
     setVisibleNavMenu(!visibleNavMenu);
   };
 
+  const { globalTheme } = useContext(ThemeContext);
+
   return (
     <header>
-      <div className="header-container">
+      <div className={`header-container ${[globalTheme]}`}>
         <div className="action-buttons-container">
-          <button className="menu-icon" onClick={toggleNavMenu}>
+          <button className={`${[globalTheme]} menu-icon`} onClick={toggleNavMenu}>
             {visibleNavMenu ? (
               <CloseIcon sx={{ fontSize: 24 }} />
             ) : (
@@ -34,7 +36,7 @@ export default function Header() {
 
         <Social />
 
-        <a className="contact-me" href="mailto: hilton.segundo12@gmail.com">
+        <a className={`${[globalTheme]} contact-me`} href="mailto: hilton.segundo12@gmail.com">
           <SendIcon sx={{ fontSize: 16 }} />
           <span>Contact me!</span>
         </a>

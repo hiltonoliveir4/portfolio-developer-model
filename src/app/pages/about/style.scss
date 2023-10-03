@@ -1,0 +1,6 @@
+@import "../../../themes/index.scss";
+
+.about-container{
+    flex-grow: 1;
+    @include switchTheme('background', 'bg-primary');
+}

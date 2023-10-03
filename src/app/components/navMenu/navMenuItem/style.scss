@@ -1,14 +1,14 @@
-@import "../../../colors.scss";
+@import "../../../../themes/index.scss";
 
 .btn-nav-menu {
   background-color: transparent;
   border: none;
   width: 100%;
   cursor: pointer;
-  color: $color-secondary-dark;
+  @include switchTheme('color', 'color-secondary');
 
   .active-menu {
-    color: $color-orange;
+    @include switchTheme('color', 'color-orange');
   }
 
   div {

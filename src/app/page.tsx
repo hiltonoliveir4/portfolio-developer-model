@@ -1,3 +1,5 @@
+import About from "./pages/about/page";
+
 export default function Home() {
-  return <main></main>;
+  return <About />;
 }
