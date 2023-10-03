@@ -3,18 +3,14 @@ import { useContext } from "react";
 import "./style.scss";
 
 interface NavMenuItemProps {
-  title?: string;
-  className?: string;
+  title: string;
   icon: React.ElementType;
-  route: string;
   active: boolean;
   onclick?: () => void;
 }
 export default function NavMenuItem({
   title,
   icon,
-  className,
-  route,
   active,
   onclick,
 }: //   route,
@@ -22,7 +18,7 @@ NavMenuItemProps) {
   const { globalTheme } = useContext(ThemeContext);
   const Icon = icon;
   return (
-    <li className={`${className ? className : ""} ${[globalTheme]}`}>
+    <li className={`${[globalTheme]}`}>
       <button className={`btn-nav-menu ${[globalTheme]}`} onClick={onclick}>
         <div className={`${[globalTheme]} ${active ? "active-menu" : ""}`}>
           <Icon sx={{ fontSize: 20 }} />

@@ -34,7 +34,6 @@ export default function NavMenu() {
             icon={menu.icon}
             title={menu.title}
             active={index === activeMenu}
-            route={menu.route}
             onclick={() => switchActiveMenu(index, menu.route)}
           />
         ))}
