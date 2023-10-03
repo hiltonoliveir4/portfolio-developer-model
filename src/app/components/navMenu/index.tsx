@@ -1,13 +1,12 @@
 "use client";
 
+import { ThemeContext } from "@/app/providers/themeProvider";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import CloseIcon from "@mui/icons-material/Close";
 import FolderIcon from "@mui/icons-material/Folder";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 import { useContext, useState } from "react";
 import NavMenuItem from "./navMenuItem";
 import "./style.scss";
-import { ThemeContext } from "@/app/providers/themeProvider";
 
 export default function NavMenu() {
   const [activeMenu, setActiveMenu] = useState(0);
