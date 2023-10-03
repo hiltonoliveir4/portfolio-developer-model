@@ -1,0 +1,22 @@
+@import "../../../themes/index.scss";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; //TODO: remove
+  flex-grow: 1;
+  @include switchTheme("background", "bg-primary");
+
+  .title-projects {
+    @include switchTheme("color", "color-primary");
+  }
+
+  svg {
+    border-radius: 50%;
+    padding: 10px;
+    border: 8px solid #fe655c;
+    width: 100px;
+    height: 100px;
+  }
+}
