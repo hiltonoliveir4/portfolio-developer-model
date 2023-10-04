@@ -7,9 +7,9 @@
   gap: 32px;
   @include switchTheme("background", "bg-primary");
   padding-bottom: 80px;
+  padding-top: 30px;
 
   @media (min-width: 980px) {
-    padding-top: 30px;
     padding-bottom: 50px;
   }
 }

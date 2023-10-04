@@ -7,12 +7,12 @@
   border-radius: 8px;
   padding: 28px;
   margin: 0px 30px;
+  padding-top: 90px;
   @include switchTheme("background", "bg-secondary");
 
   @media (min-width: 1080px) {
     width: 980px;
     margin: 0 auto;
-    padding-top: 90px;
   }
 
   .name {

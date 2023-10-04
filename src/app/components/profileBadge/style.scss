@@ -4,17 +4,13 @@
   position: relative;
 
   .image-badge {
-    display: none;
-
-    @media (min-width: 980px) {
-      display: block;
-      position: absolute;
-      left: 50%;
-      top: -40px;
-      transform: translateX(-50%);
-      border: 12px solid;
-      @include switchTheme("border-color", "bg-secondary");
-      border-radius: 50%;
-    }
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    border: 12px solid;
+    @include switchTheme("border-color", "bg-secondary");
+    border-radius: 50%;
   }
 }
