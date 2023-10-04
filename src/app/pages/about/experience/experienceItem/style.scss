@@ -24,10 +24,27 @@
     justify-content: center;
     flex-direction: column;
 
-    .title-experience {
-      @include switchTheme("color", "color-orange");
-      font-weight: 600;
-      font-size: 20px;
+    .title-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 12px;
+      width: 100%;
+      align-items: center;
+
+      .title-experience {
+        @include switchTheme("color", "color-orange");
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .company-name {
+        @include switchTheme("color", "color-secondary");
+        @include switchTheme("background", "bg-primary");
+        font-size: 12px;
+        font-weight: 300;
+        padding: 4px 8px;
+        border-radius: 8px;
+      }
     }
 
     .time-experience {

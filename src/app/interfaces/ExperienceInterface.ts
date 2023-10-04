@@ -3,4 +3,5 @@ export default interface ExperienceInterface {
   position: string;
   descriptionJob: string;
   timeExperience: string;
+  image: string;
 }
