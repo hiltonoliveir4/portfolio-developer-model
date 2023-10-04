@@ -4,7 +4,11 @@
   text-decoration: none;
   width: 100%;
   cursor: pointer;
-  @include switchTheme("color", "color-secondary");
+  @include switchTheme("color", "color-icons-nav");
+
+  @media (min-width: 980px) {
+    @include switchTheme("color", "color-secondary");
+  }
 
   .active-menu {
     @include switchTheme("color", "color-orange");
