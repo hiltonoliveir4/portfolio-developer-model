@@ -19,7 +19,8 @@ export default function Experience() {
             timeExperience={experience.timeExperience}
             descriptionJob={experience.descriptionJob}
             companyName={experience.companyName}
-            image={experience.image}
+            imageDark={experience.imageDark}
+            imageLight={experience.imageLight}
           />
         ))}
       </ul>

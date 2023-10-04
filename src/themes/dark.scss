@@ -5,4 +5,9 @@ $dark: (
   color-primary: #d7dde9,
   color-secondary: #a5b3ce,
   color-orange: #fe655c,
+  shadow-secondary: (
+    15px 15px 30px #1a2130,
+    -15px -15px 30px #232d40,
+  ),
+  bg-shadow-secondary: linear-gradient(145deg, #1b2332, #202a3c),
 );

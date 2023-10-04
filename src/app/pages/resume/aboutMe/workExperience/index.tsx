@@ -13,7 +13,8 @@ export default function WorkExperiences() {
           timeExperience={experience.timeExperience}
           descriptionJob={experience.descriptionJob}
           position={experience.position}
-          image={experience.image}
+          imageDark={experience.imageDark}
+          imageLight={experience.imageLight}
         />
       ))}
     </div>

@@ -18,6 +18,13 @@
     }
   }
 
+  img {
+    padding: 20px;
+    border-radius: 4px;
+    @include switchTheme("background", "bg-shadow-secondary");
+    @include switchTheme("box-shadow", "shadow-secondary");
+  }
+
   div {
     display: flex;
     align-items: flex-start;

@@ -9,14 +9,16 @@ export default function ExperienceItem({
   timeExperience,
   descriptionJob,
   companyName,
-  image,
+  imageDark,
+  imageLight,
 }: ExperienceInterface) {
   const { globalTheme } = useContext(ThemeContext);
   return (
     <>
       <li className={`experience-item ${globalTheme}`}>
         <Image
-          src={image}
+          className={globalTheme}
+          src={globalTheme === "dark" ? imageDark : imageLight}
           alt={companyName}
           width={200}
           height={200}
