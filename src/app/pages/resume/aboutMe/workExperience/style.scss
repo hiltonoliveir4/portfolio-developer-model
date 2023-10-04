@@ -1,0 +1,7 @@
+@import "../../../../../themes/index.scss";
+
+.experience-container {
+  > div:not(:last-child) {
+    padding-bottom: 20px;
+  }
+}

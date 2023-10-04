@@ -1,0 +1,39 @@
+@import "../../../../../../themes/index.scss";
+
+.education-item-container {
+  .title-graduation-container {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    h4 {
+      @include switchTheme("color", "color-primary");
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  h5 {
+    padding-left: 32px;
+    @include switchTheme("color", "color-secondary");
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  span {
+    padding-left: 32px;
+    @include switchTheme("color", "color-secondary");
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../../../../themes/index.scss";
+
+.education-container {
+  > div:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  > div:last-child {
+    margin-bottom: 20px;
+  }
+
+  border-bottom: 1px solid;
+  @include switchTheme("border-color", "color-primary");
+
+  @media (min-width: 980px) {
+    border-bottom: none;
+
+    > div:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

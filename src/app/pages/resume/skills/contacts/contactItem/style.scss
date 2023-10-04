@@ -1,0 +1,21 @@
+@import "../../../../../../themes/index.scss";
+
+.contact-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  span,
+  a {
+    text-decoration: none;
+    @include switchTheme("color", "color-secondary");
+    font-size: 14px;
+  }
+}
