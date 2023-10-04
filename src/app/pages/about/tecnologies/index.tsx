@@ -6,7 +6,7 @@ import LaravelIcon from "@/app/components/icons/LaravelIcon";
 import PhpIcon from "@/app/components/icons/PhpIcon";
 import PythonIcon from "@/app/components/icons/PythonIcon";
 import ReactIcon from "@/app/components/icons/ReactIcon";
-import SassIcon from "@/app/components/icons/Sass";
+import SassIcon from "@/app/components/icons/SassIcon";
 import TypeScriptIcon from "@/app/components/icons/TypescriptIcon";
 import { ThemeContext } from "@/app/providers/themeProvider";
 import { useContext } from "react";

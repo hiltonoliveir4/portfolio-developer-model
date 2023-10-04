@@ -12,11 +12,11 @@ export default function About() {
   const { globalTheme } = useContext(ThemeContext);
 
   return (
-    <div className={`about ${globalTheme}`}>
+    <section className={`about ${globalTheme}`}>
       <ProfileBadge />
       <Description />
       <LanguagesFrameworks />
       <Experience />
-    </div>
+    </section>
   );
 }
