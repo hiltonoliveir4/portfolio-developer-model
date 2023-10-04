@@ -2,5 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 8px;
+
+  @media (min-width: 768px) {
+    gap: 24px;
+  }
 }

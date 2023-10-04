@@ -8,6 +8,7 @@
   .company-data {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     h5 {
       @include switchTheme("color", "color-secondary");
