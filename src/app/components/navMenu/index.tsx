@@ -4,7 +4,6 @@ import { ThemeContext } from "@/app/providers/themeProvider";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import FolderIcon from "@mui/icons-material/Folder";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
-import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
 import NavMenuItem from "./navMenuItem";
 import "./style.scss";
@@ -12,11 +11,9 @@ import "./style.scss";
 export default function NavMenu() {
   const [activeMenu, setActiveMenu] = useState(0);
   const { globalTheme } = useContext(ThemeContext);
-  const router = useRouter();
 
-  const switchActiveMenu = (index: number, route: string) => {
+  const switchActiveMenu = (index: number) => {
     setActiveMenu(index);
-    router.push(`${route}`);
   };
 
   const navMenus = [
@@ -34,7 +31,8 @@ export default function NavMenu() {
             icon={menu.icon}
             title={menu.title}
             active={index === activeMenu}
-            onclick={() => switchActiveMenu(index, menu.route)}
+            route={menu.route}
+            onClick={() => switchActiveMenu(index)}
           />
         ))}
       </ul>

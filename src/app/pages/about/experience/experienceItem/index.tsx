@@ -19,7 +19,13 @@ export default function ExperienceItem({
   return (
     <>
       <li className={`experience-item ${globalTheme}`}>
-        <Image src={image} alt={title} width={200} height={200} />
+        <Image
+          src={image}
+          alt={title}
+          width={200}
+          height={200}
+          loading="lazy"
+        />
         <div>
           <h3 className={`title-experience ${globalTheme}`}>{title}</h3>
           <span className={`time-experience ${globalTheme}`}>{time}</span>
