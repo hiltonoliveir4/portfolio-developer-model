@@ -16,7 +16,7 @@ export default function Resume() {
       <div className={`resume-container ${globalTheme}`}>
         <div className={`title-container`}>
           <h1 className={`name ${globalTheme}`}>Hilton Oliveira Segundo</h1>
-          <h2 className={`job ${globalTheme}`}>Desenvolvedor</h2>
+          <h2 className={`job ${globalTheme}`}>Developer</h2>
         </div>
         <div className={`divider ${globalTheme}`}></div>
         <div className="data-container">

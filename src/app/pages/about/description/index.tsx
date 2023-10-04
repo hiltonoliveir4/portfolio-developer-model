@@ -15,7 +15,6 @@ export default function Description() {
         proficient in HTML and CSS, frameworks like React and Laravel, and
         languages such as PHP, Python, JavaScript, and TypeScript.
       </p>
-      <button className={`btn ${globalTheme}`}>View Resume</button>
     </section>
   );
 }

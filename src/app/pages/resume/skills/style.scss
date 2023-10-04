@@ -1,12 +1,12 @@
 @import "../../../../themes/index.scss";
 
 .skills-container {
-  flex: 1;
-
   @media (min-width: 980px) {
     padding-left: 16px;
     border-left: 1px solid;
     @include switchTheme("border-color", "color-secondary");
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   h3 {
