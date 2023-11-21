@@ -1,0 +1,12 @@
+@import "../../../themes/index.scss";
+
+.print-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    svg {
+        height: 20px;
+        width: 20px;
+        fill: #fe655c;
+    }
+}

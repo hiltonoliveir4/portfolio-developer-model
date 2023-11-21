@@ -44,10 +44,16 @@
       }
 
       .job {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
         @include switchTheme("color", "color-secondary");
+        h2{
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 100%;
+        }
       }
     }
 

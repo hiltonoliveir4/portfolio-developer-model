@@ -12,7 +12,7 @@ export default function Contacts() {
         content="hilton.segundo12@gmail.com"
         type="mail"
       />
-      <ContactItem icon={WebIcon} content="https://hilton.com.br" type="link" />
+      <ContactItem icon={WebIcon} content="https://hiltonoliveiradev.vercel.app" type="link" />
     </div>
   );
 }
