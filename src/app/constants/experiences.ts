@@ -3,6 +3,15 @@ import ExperienceInterface from "@/app/interfaces/ExperienceInterface";
 export default function ExperienceList(): ExperienceInterface[] {
   return [
     {
+      companyName: "iServApp",
+      position: "Full Stack Developer",
+      descriptionJob:
+        "My experience is centered around Frontend development, using React to create reusable components. I work on the backend with Laravel, where I develop routes for the API, perform system maintenance, and assess potential improvements. Additionally, I actively participate in the development of a content moderator, employing Amazon Rekognition and Perspective API technologies. This initiative aims to leverage advanced image recognition and language analysis features to enhance content moderation, ensuring a safer online environment in line with desired standards. My contribution involves integrating these tools, providing a comprehensive and effective approach to content management and control on the platform.",
+      timeExperience: "October 2023 - Present (2 months)",
+      imageDark: "/images/logo-iservapp-light.svg",
+      imageLight: "/images/logo-iservapp.svg",
+    },
+    {
       companyName: "Inforgeneses",
       position: "Full Stack Developer",
       descriptionJob:

@@ -16,7 +16,7 @@ export default function WorkExperienceItem({
         <h5 className={`${globalTheme}`}>{timeExperience}</h5>
         <h5 className={`badge ${globalTheme}`}>{companyName}</h5>
       </div>
-      <h4 className={`${globalTheme}`}>{position}d</h4>
+      <h4 className={`${globalTheme}`}>{position}</h4>
       <p className={`${globalTheme}`}>{descriptionJob}</p>
     </div>
   );
