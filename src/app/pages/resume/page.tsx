@@ -21,7 +21,7 @@ export default function Resume() {
           <div className={`title-container`}>
             <h1 className={`name ${globalTheme}`}>Hilton Oliveira Segundo</h1>
             <div className={`job ${globalTheme}`}>
-              <h2>Developer</h2>
+              <h2>Desenvolvedor</h2>
               <PrintPage resumeContentRef={resumeContentRef} />
             </div>
           </div>

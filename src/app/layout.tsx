@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Webpage",
-  description: "A simple portfolio web for a developers",
+  title: "Hilton Oliveira",
+  description: "Portfolio pessoal de projetos e experiências profissionais",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <ThemeContextParent>
-      <html lang="en">
+      <html lang="ptbr">
         <body className={`${poppins.className}`}>
           <Header />
           {children}

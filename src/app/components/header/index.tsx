@@ -38,7 +38,7 @@ export default function Header() {
 
         <a className={`${[globalTheme]} contact-me`} href="mailto: hilton.segundo12@gmail.com">
           <SendIcon sx={{ fontSize: 16 }} />
-          <span>Contact me!</span>
+          <span>Fale comigo!</span>
         </a>
       </div>
       {visibleNavMenu && <NavMenu />}

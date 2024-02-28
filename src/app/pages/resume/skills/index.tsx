@@ -10,11 +10,11 @@ export default function Skills() {
   const { globalTheme } = useContext(ThemeContext);
   return (
     <div className={`skills-container ${globalTheme}`}>
-      <h3 className={`${globalTheme}`}>CONTACTS</h3>
+      <h3 className={`${globalTheme}`}>CONTATOS</h3>
       <Contacts />
       <div className={`divider ${globalTheme}`}></div>
 
-      <h3 className={`${globalTheme}`}>TECH STACK</h3>
+      <h3 className={`${globalTheme}`}>TECNOLOGIAS</h3>
       <TechStack />
       <div className={`divider ${globalTheme}`}></div>
 
@@ -22,7 +22,7 @@ export default function Skills() {
       <SoftSkills />
       <div className={`divider ${globalTheme}`}></div>
 
-      <h3 className={`${globalTheme}`}>LANGUAGES</h3>
+      <h3 className={`${globalTheme}`}>LÍNGUAS</h3>
       <Languages />
     </div>
   );

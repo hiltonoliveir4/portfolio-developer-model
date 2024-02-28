@@ -3,17 +3,15 @@ import { useContext } from "react";
 
 export default function TechStack() {
   const techs = [
+    "React",
+    "TypeScript",
+    "JavaScript",
     "HTML",
     "CSS",
     "PHP",
-    "JavaScript",
-    "TypeScript",
-    "React",
     "Laravel",
     "Python",
     "Git",
-    "Gitlab",
-    "Linux",
     "SCRUM",
   ];
 

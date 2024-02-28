@@ -8,18 +8,18 @@ export default function Languages() {
   const languages = [
     {
       icon: UsaIcon,
-      level: "Basic",
-      language: "English",
+      level: "Basico",
+      language: "Inglês",
     },
     {
       icon: BrazilIcon,
-      level: "Native",
-      language: "Portuguese",
+      level: "Nativo",
+      language: "Português",
     },
     {
       icon: SpainIcon,
-      level: "Basic",
-      language: "Spanish",
+      level: "Basico",
+      language: "Espanhol",
     },
   ];
   return (

@@ -4,28 +4,28 @@ export default function ExperienceList(): ExperienceInterface[] {
   return [
     {
       companyName: "iServApp",
-      position: "Full Stack Developer",
+      position: "Desenvolvedor Full Stack",
       descriptionJob:
-        "My experience is centered around Frontend development, using React to create reusable components. I work on the backend with Laravel, where I develop routes for the API, perform system maintenance, and assess potential improvements. Additionally, I actively participate in the development of a content moderator, employing Amazon Rekognition and Perspective API technologies. This initiative aims to leverage advanced image recognition and language analysis features to enhance content moderation, ensuring a safer online environment in line with desired standards. My contribution involves integrating these tools, providing a comprehensive and effective approach to content management and control on the platform.",
-      timeExperience: "October 2023 - Present (2 months)",
+        "Minha experiência está centrada no desenvolvimento de Frontend, utilizando React para criar componentes reutilizáveis, escalaveis e de facil manutenibilidade. Trabalho no backend com Laravel, onde desenvolvo rotas para a API, realizo manutenção do sistema e avalio melhorias potenciais. Além disso, participo ativamente do desenvolvimento de um moderador de conteúdo, utilizando tecnologias como Amazon Rekognition e Perspective API. Esta iniciativa visa alavancar recursos avançados de reconhecimento de imagem e análise de linguagem para aprimorar a moderação de conteúdo.",
+      timeExperience: "5 meses",
       imageDark: "/images/logo-iservapp-light.svg",
       imageLight: "/images/logo-iservapp.svg",
     },
     {
       companyName: "Inforgeneses",
-      position: "Full Stack Developer",
+      position: "Desenvolvedor Full Stack",
       descriptionJob:
-        "My experience has extended to Backend development, creating APIs and routes for academic and financial systems, working with PHP, SQLServer, MySQL, and PostgreSQL databases. On the Frontend, I have replicated layouts and consumed APIs using HTML, CSS, and JavaScript. I have also played an essential role in modernizing legacy systems, improving user interfaces, and refactoring code for a more updated technology stack. My focus has been on creating maintainable, robust code with current technologies, balancing ongoing maintenance and innovation to enhance efficiency and the user experience.",
-      timeExperience: "August 2021 - Present (2 years)",
+        "Minha experiência se estendeu ao desenvolvimento de Backend, criando APIs e rotas para sistemas acadêmicos e financeiros, trabalhando com bancos de dados PHP, SQLServer, MySQL e PostgreSQL. No Frontend, reproduzi layouts e consumi APIs utilizando HTML, CSS e JavaScript. Também desempenhei um papel essencial na modernização de sistemas legados, melhorando interfaces de usuário e refatorando código para uma pilha de tecnologia mais atualizada. Meu foco tem sido na criação de código sustentável e robusto com tecnologias atuais, equilibrando manutenção contínua e inovação para aprimorar eficiência e a experiência do usuário.",
+      timeExperience: "2 anos e 7 meses",
       imageDark: "/images/logo_inforgeneses_dark.svg",
       imageLight: "/images/logo_inforgeneses.svg",
     },
     {
       companyName: "EGMA",
-      position: "Frontend Developer",
+      position: "Desenvolvedor Frontend",
       descriptionJob:
-        "My experience has focused on Frontend development, where I created screens and forms for the Maranhão School of Government website. I used HTML, CSS, and JavaScript to replicate layouts and ensure an intuitive and user-friendly interface. Additionally, I played a key role in modernizing the website, enhancing the user experience, and keeping the code up to date. My focus was on creating high-quality code, ensuring efficiency, and an improved user experience.",
-      timeExperience: "February 2021 - August 2021 (7 Months)",
+        "Minha experiência tem se concentrado no desenvolvimento de Frontend, onde criei telas e formulários para o site da Escola de Governo do Maranhão. Utilizei HTML, CSS e JavaScript para reproduzir layouts e garantir uma interface intuitiva e amigável ao usuário. Além disso, desempenhei um papel fundamental na modernização do site, aprimorando a experiência do usuário e mantendo o código atualizado. Meu foco foi na criação de código de alta qualidade, garantindo eficiência e uma experiência de usuário aprimorada.",
+      timeExperience: "7 meses",
       imageDark: "/images/logo_egma_dark.svg",
       imageLight: "/images/logo_egma.svg",
     },
