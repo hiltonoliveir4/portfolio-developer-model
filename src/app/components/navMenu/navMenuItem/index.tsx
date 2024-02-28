@@ -8,14 +8,12 @@ interface NavMenuItemProps {
   icon: React.ElementType;
   active: boolean;
   route: string;
-  onClick: () => void;
 }
 export default function NavMenuItem({
   title,
   icon,
   active,
   route,
-  onClick,
 }: NavMenuItemProps) {
   const { globalTheme } = useContext(ThemeContext);
   const Icon = icon;
@@ -24,7 +22,6 @@ export default function NavMenuItem({
       <Link
         className={`btn-nav-menu ${[globalTheme]}`}
         href={route}
-        onClick={onClick}
       >
         <div className={`${[globalTheme]} ${active ? "active-menu" : ""}`}>
           <Icon sx={{ fontSize: 20 }} />
