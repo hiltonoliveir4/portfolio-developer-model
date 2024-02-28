@@ -5,12 +5,12 @@ export default function EducationList(): EducationInterface[] {
     {
       institute: "Universidade Federal do Maranhão",
       description: "Bacharelado Interdisciplinar em Ciência e Tecnologia",
-      time: "May/2016 - December/2020",
+      time: "Maio/2016 - Dezembro/2020",
     },
     {
       institute: "Universidade Federal do Maranhão",
       description: "Engenharia da Computação",
-      time: "March/2021 - December/2023",
+      time: "Março/2021 - Dezembro/2023",
     },
   ];
 }
