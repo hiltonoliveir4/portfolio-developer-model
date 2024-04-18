@@ -15,9 +15,9 @@ export default function NavMenu() {
   const pathname = usePathname()
 
   const navMenus = useMemo(() => [
-    { icon: AccountCircleIcon, title: "ABOUT", route: "/" },
-    { icon: FolderIcon, title: "PROJECTS", route: "/pages/projects" },
-    { icon: TextSnippetIcon, title: "RESUME", route: "/pages/resume" },
+    { icon: AccountCircleIcon, title: "SOBRE", route: "/" },
+    { icon: FolderIcon, title: "PROJETOS", route: "/pages/projects" },
+    { icon: TextSnippetIcon, title: "RESUMO", route: "/pages/resume" },
   ], []) ;
 
   useEffect(() => {

@@ -23,15 +23,15 @@ export default function LanguagesFrameworks() {
     { description: "Sass", icon: SassIcon },
     { description: "TypeScript", icon: TypeScriptIcon },
     { description: "React", icon: ReactIcon },
+    { description: "Python", icon: PythonIcon },
     { description: "PHP", icon: PhpIcon },
     { description: "CodeIgniter", icon: CodeIgniterIcon },
     { description: "Laravel", icon: LaravelIcon },
-    { description: "Python", icon: PythonIcon },
   ];
 
   return (
     <div className={`tecnologies-container ${globalTheme}`}>
-      <h2 className={`name ${globalTheme}`}>Languages & Frameworks</h2>
+      <h2 className={`name ${globalTheme}`}>Linguagens & Frameworks</h2>
       <ul className={`list-technologies ${globalTheme}`}>
         {techs.map((tech, index) => (
           <TechBadge

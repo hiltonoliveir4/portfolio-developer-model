@@ -10,7 +10,7 @@ export default function Experience() {
   const { globalTheme } = useContext(ThemeContext);
   return (
     <section className={`experience-container ${globalTheme}`}>
-      <h2 className={`title ${globalTheme}`}>Experience</h2>
+      <h2 className={`title ${globalTheme}`}>Experiências</h2>
       <ul className={`list-experience ${globalTheme}`}>
         {experienceList.map((experience, index) => (
           <ExperienceItem
