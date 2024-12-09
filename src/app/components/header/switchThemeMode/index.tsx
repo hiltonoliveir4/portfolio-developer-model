@@ -26,7 +26,7 @@ export default function SwitchThemeMode() {
         handleDiameter={20}
         onColor="#fe655c"
         offColor="#a5b3ce"
-
+        aria-label="Alterar tema"
         checkedIcon={<div className="icon-switch"><LightModeIcon sx={{height: 15, width: 15}}/></div>}
         uncheckedIcon={<div className="icon-switch"><DarkModeIcon sx={{height: 15, width: 15}}/></div>}
       />
