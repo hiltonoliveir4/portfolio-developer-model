@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <ThemeContextParent>
-      <html lang="ptbr">
+      <html lang="pt-BR">
         <body className={`${poppins.className}`}>
           <Header />
           {children}

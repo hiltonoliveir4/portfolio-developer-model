@@ -34,11 +34,12 @@ export default function LanguagesFrameworks() {
       <h2 className={`name ${globalTheme}`}>Linguagens & Frameworks</h2>
       <ul className={`list-technologies ${globalTheme}`}>
         {techs.map((tech, index) => (
-          <TechBadge
-            key={index}
-            description={tech.description}
-            icon={tech.icon}
-          />
+          <li key={index}>
+            <TechBadge
+              description={tech.description}
+              icon={tech.icon}
+            />
+          </li>
         ))}
       </ul>
     </div>

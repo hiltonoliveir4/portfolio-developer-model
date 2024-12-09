@@ -23,7 +23,7 @@ export default function Header() {
     <header>
       <div className={`header-container ${[globalTheme]}`}>
         <div className="action-buttons-container">
-          <button className={`${[globalTheme]} menu-icon`} onClick={toggleNavMenu}>
+          <button className={`${[globalTheme]} menu-icon`} onClick={toggleNavMenu} aria-label="fechar menu">
             {visibleNavMenu ? (
               <CloseIcon sx={{ fontSize: 24 }} />
             ) : (
@@ -36,7 +36,7 @@ export default function Header() {
 
         <Social />
 
-        <a className={`${[globalTheme]} contact-me`} href="mailto: hilton.segundo12@gmail.com">
+        <a className={`${[globalTheme]} contact-me`} href="mailto: hilton.segundo12@gmail.com" aria-label="fale comigo">
           <SendIcon sx={{ fontSize: 16 }} />
           <span>Fale comigo!</span>
         </a>
