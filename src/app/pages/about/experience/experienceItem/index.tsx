@@ -3,16 +3,19 @@ import { ThemeContext } from "@/app/providers/themeProvider";
 import Image from "next/image";
 import { useContext } from "react";
 import "./style.scss";
+import { calculateDateDifference } from "@/app/utils/date";
 
 export default function ExperienceItem({
   position,
-  timeExperience,
+  initExperience,
+  finishExperience,
   descriptionJob,
   companyName,
   imageDark,
   imageLight,
 }: ExperienceInterface) {
   const { globalTheme } = useContext(ThemeContext);
+  const timeExperience = calculateDateDifference(initExperience, finishExperience)
   return (
     <>
       <li className={`experience-item ${globalTheme}`}>

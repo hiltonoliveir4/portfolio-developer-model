@@ -2,7 +2,8 @@ export default interface ExperienceInterface {
   companyName: string;
   position: string;
   descriptionJob: string;
-  timeExperience: string;
+  initExperience: string;
+  finishExperience: string;
   imageLight: string;
   imageDark: string;
 }

@@ -2,14 +2,17 @@ import ExperienceInterface from "@/app/interfaces/ExperienceInterface";
 import { ThemeContext } from "@/app/providers/themeProvider";
 import { useContext } from "react";
 import "./style.scss";
+import { calculateDateDifference } from "@/app/utils/date";
 
 export default function WorkExperienceItem({
   companyName,
   position,
   descriptionJob,
-  timeExperience,
+  initExperience,
+  finishExperience
 }: ExperienceInterface) {
   const { globalTheme } = useContext(ThemeContext);
+  const timeExperience = calculateDateDifference(initExperience, finishExperience)
   return (
     <div className={`${globalTheme} experience-item-container`}>
       <div className="company-data">

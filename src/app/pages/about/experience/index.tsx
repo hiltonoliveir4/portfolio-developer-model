@@ -16,11 +16,12 @@ export default function Experience() {
           <ExperienceItem
             key={index}
             position={experience.position}
-            timeExperience={experience.timeExperience}
             descriptionJob={experience.descriptionJob}
             companyName={experience.companyName}
             imageDark={experience.imageDark}
             imageLight={experience.imageLight}
+            initExperience={experience.initExperience}
+            finishExperience={experience.finishExperience}
           />
         ))}
       </ul>

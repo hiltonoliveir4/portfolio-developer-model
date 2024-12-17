@@ -10,11 +10,12 @@ export default function WorkExperiences() {
         <WorkExperienceItem
           key={index}
           companyName={experience.companyName}
-          timeExperience={experience.timeExperience}
           descriptionJob={experience.descriptionJob}
           position={experience.position}
           imageDark={experience.imageDark}
           imageLight={experience.imageLight}
+          initExperience={experience.initExperience}
+          finishExperience={experience.finishExperience}
         />
       ))}
     </div>
